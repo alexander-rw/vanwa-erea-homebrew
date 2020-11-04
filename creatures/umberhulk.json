@@ -1,160 +1,174 @@
 {
-	"name": "Ulitharid",
-	"source": "VGM",
-	"page": 175,
-	"otherSources": [
-		{
-			"source": "WDMM"
-		}
-	],
-	"size": "L",
-	"type": "aberration",
+	"name": "Hive Colossus",
+	"source": "VANWA",
+	"page": 1,
+	"otherSources": [],
+	"size": "H",
+	"type": {
+				"type": "abberation",
+				"tags": [
+					"Illitharid Hybrid"
+				]
+			},
 	"alignment": [
 		"L",
 		"E"
 	],
 	"ac": [
 		{
-			"ac": 15,
-			"from": [
-				"{@item breastplate|phb}"
-			]
+		"ac": 18,
+		"from": [
+			"natural armor"
+		]
 		}
 	],
 	"hp": {
-		"average": 127,
-		"formula": "17d10 + 14"
+		"average": 231,
+		"formula": "22d12 + 80"
 	},
 	"speed": {
-		"walk": 30
+		"walk": 40,
+		"burrow": 20,
+		"fly": 40
 	},
-	"str": 15,
-	"dex": 12,
-	"con": 15,
-	"int": 21,
-	"wis": 19,
-	"cha": 21,
+	"str": 24,
+	"dex": 14,
+	"con": 18,
+	"int": 18,
+	"wis": 14,
+	"cha": 12,
 	"save": {
 		"int": "+9",
-		"wis": "+8",
-		"cha": "+9"
+		"wis": "+7",
+		"cha": "+6"
 	},
 	"skill": {
+		"athletics": "+12",
+		"perception": "+7",
 		"arcana": "+9",
-		"insight": "+8",
-		"perception": "+8",
-		"stealth": "+5"
+		"investigation": "+9"
 	},
 	"senses": [
-		"darkvision 120 ft."
+		"darkvision 120 ft.",
+		"tremorsense 60 ft."
 	],
-	"passive": 18,
+	"passive": 17,
 	"languages": [
 		"Deep Speech",
 		"Undercommon",
-		"telepathy 2 miles"
+		"Umber Hulk",
+		"telepathy 120ft."
 	],
-	"cr": "9",
-	"spellcasting": [
-		{
-			"name": "Innate Spellcasting (Psionics)",
-			"headerEntries": [
-				"The ulitharid's innate spellcasting ability is Intelligence (spell save {@dc 17}). It can innately cast the following spells, requiring no components:"
-			],
-			"will": [
-				"{@spell detect thoughts}",
-				"{@spell levitate}"
-			],
-			"daily": {
-				"1e": [
-					"{@spell confusion}",
-					"{@spell dominate monster}",
-					"{@spell eyebite}",
-					"{@spell feeblemind}",
-					"{@spell mass suggestion}",
-					"{@spell plane shift} (self only)",
-					"{@spell project image}",
-					"{@spell scrying}",
-					"{@spell telekinesis}"
-				]
-			},
-			"ability": "int",
-			"type": "spellcasting"
-		}
-	],
+	"cr": "17",
 	"trait": [
 		{
-			"name": "Creature Sense",
-			"entries": [
-				"The ulitharid is aware of the presence of creatures within 2 miles of it that have an Intelligence score of 4 or higher. It knows the distance and direction to each creature, as well as each creature's intelligence score, but can't sense anything else about it. A creature protected by a mind blank spell, a nondetection spell, or similar magic can't be perceived in this manner."
-			]
+		"name": "Legendary Resistance (2/Day)",
+		"entries": [
+			"If Hive fails a saving throw, it can choose to succeed instead."
+		]
 		},
 		{
-			"name": "Magic Resistance",
-			"entries": [
-				"The ulitharid has advantage on saving throws against spells and other magical effects."
-			]
+		"name": "Confusing Gaze",
+		"entries": [
+			"When a creature starts its turn within 30 feet of the umber hulk and is able to see Hive's eyes, it can magically force the creature to make a {@dc 15} Charisma saving throw, unless the umber hulk is {@condition incapacitated}.",
+			"On a failed saving throw, the creature can't take reactions until the start of its next turn and rolls a {@dice d8} to determine what it does during that turn. On a 1 to 4, the creature does nothing. On a 5 or 6, the creature takes no action but uses all its movement to move in a random direction. On a 7 or 8, the creature makes one melee attack against a random creature, or it does nothing if no creature is within reach.",
+			"Unless surprised, a creature can avert its eyes to avoid the saving throw at the start of its turn. If the creature does so, it can't see the umber hulk until the start of its next turn, when it can avert its eyes again. If the creature looks at the umber hulk in the meantime, it must immediately make the save."
+		]
 		},
 		{
-			"name": "Psionic Hub",
-			"entries": [
-				"If an elder brain establishes a psychic link with the ulitharid, the elder brain can form a psychic link with any other creature the ulitharid can detect using its Creature Sense. Any such link ends if the creature falls outside the telepathy ranges of both the ulitharid and the elder brain. The ulitharid can maintain its psychic link with the elder brain regardless of the distance between them, so long as they are both on the same plane of existence. lithe ulitharid is more than 5 miles away from the elder brain, it can end the psychic link at any time (no action required)."
-			]
+		"name": "Tunneler",
+		"entries": [
+			"Hive can burrow through solid rock at half its burrowing speed and leaves a 5 foot-wide, 8-foot-high tunnel in its wake."
+		]
+		},
+		{
+		"name": "Magic Resistance",
+		"entries": [
+			"Hive has advantage on saving throws against spells and other magical effects."
+		]
 		}
 	],
 	"action": [
 		{
-			"name": "Tentacles",
-			"entries": [
-				"{@atk mw} {@hit 9} to hit, reach 10 ft., one creature. {@h}27 ({@damage 4d10 + 5}) psychic damage. If the target is Large or smaller, it is {@condition grappled} (escape {@dc 14}) and must succeed on a {@dc 17} Intelligence saving throw or be {@condition stunned} until this grapple ends."
-			]
+		"name": "Multiattack",
+		"entries": [
+			"Hive makes three attacks: two with its claws and one with its mandibles, or tentacles."
+		]
 		},
 		{
-			"name": "Extract Brain",
-			"entries": [
-				"{@atk mw} {@hit 9} to hit, reach 5 ft., one {@condition incapacitated} humanoid {@condition grappled} by the ulitharid. {@h}55 ({@damage 10d10}) piercing damage. If this damage reduces the target to 0 hit points, the ulitharid kills the target by extracting and devouring its brain."
-			]
+		"name": "Claw",
+		"entries": [
+			"{@atk mw} {@hit 11} to hit, reach 10 ft., one target. {@h}14 ({@damage 1d12 + 7}) slashing damage."
+		]
 		},
 		{
-			"name": "Mind Blast {@recharge 5}",
-			"entries": [
-				"The ulitharid magically emits psychic energy in a 60-foot cone. Each creature in that area must succeed on a {@dc 17} Intelligence saving throw or take 31 ({@damage 4d12 + 5}) psychic damage and be {@condition stunned} for 1 minute. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
-			]
+		"name": "Mandibles",
+		"entries": [
+			"{@atk mw} {@hit 12} to hit, reach 5 ft., one target. {@h}20 ({@damage 2d12 + 7}) slashing damage."
+		]
+		},
+		{
+		"name": "Tentacles",
+		"entries": [
+			"{@atk mw} {@hit 12} to hit, reach 10 ft., one creature. {@h}21 ({@damage 3d10 + 4}) psychic damage. If the target is Large or smaller, it is {@condition grappled} (escape {@dc 15}) and must succeed on a {@dc 17} Intelligence saving throw or be {@condition stunned} until this grapple ends."
+		]
+		},
+		{
+		"name": "Extract Brain",
+		"entries": [
+			"{@atk mw} {@hit 12} to hit, reach 5 ft., one {@condition incapacitated} humanoid {@condition grappled} by Hive. {@h}55 ({@damage 10d10}) piercing damage. If this damage reduces the target to 0 hit points, Hive kills the target by extracting and devouring its brain."
+		]
+		},
+		{
+		"name": "Mind Blast {@recharge 6}",
+		"entries": [
+			"Hive magically emits psychic energy in a 60-foot cone. Each creature in that area must succeed on a {@dc 17} Intelligence saving throw or take 30 ({@damage 4d12 + 4}) psychic damage and be {@condition stunned} for 1 minute. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+		]
+		}
+	],
+	"legendary": [
+		{
+		"name": "Claws",
+		"entries": [
+			"Hive makes one attack with its tentacles."
+		]
+		},
+		{
+		"name": "Tentacles",
+		"entries": [
+			"Hive makes one attack with its tentacles."
+		]
+		},
+		{
+		"name": "Extract Brain (Costs 2 Actions)",
+		"entries": [
+			"Hive uses Extract Brain."
+		]
+		},
+		{
+		"name": "Mind Blast (Costs 3 Actions)",
+		"entries": [
+			"Hive recharges its Mind Blast and uses it."
+		]
 		}
 	],
 	"environment": [
 		"underdark"
 	],
-	"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/500/ulitharid.mp3",
-	"traitTags": [
-		"Magic Resistance"
-	],
 	"senseTags": [
-		"SD"
+		"SD",
+		"T"
 	],
 	"actionTags": [
-		"Tentacles"
+		"Multiattack"
 	],
 	"languageTags": [
-		"DS",
-		"TP",
-		"U"
+		"OTH"
 	],
 	"damageTags": [
-		"P",
-		"Y"
-	],
-	"spellcastingTags": [
-		"I",
-		"P"
+		"S"
 	],
 	"miscTags": [
-		"AOE",
-		"MW",
-		"RCH"
-	],
-	"conditionInflicted": [
-		"grappled",
-		"stunned"
+		"MW"
 	]
 }

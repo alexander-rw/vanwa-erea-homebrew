@@ -8,9 +8,10 @@ import { meta } from "./meta.js";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 const monsters = [
-    "kharid/mactar.json",
-    "kharid/astar.json",
-].map(x => parseFile(`${__dirname}/../creatures/${x}`));
+    "kharid/mactar",
+    "kharid/astar",
+    "umberhulk"
+].map(x => parseFile(`${__dirname}/../creatures/${x}.json`));
 
 const data = {
     meta,
