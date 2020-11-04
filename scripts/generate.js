@@ -1,6 +1,6 @@
 import { EOL } from "os";
-import { parseFile, save } from "./functions";
-import { meta } from "./meta";
+import { parseFile, save } from "./functions.js";
+import { meta } from "./meta.js";
 
 const monsters = [
     "kharid/mactar.json",
