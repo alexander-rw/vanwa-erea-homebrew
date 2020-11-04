@@ -3,22 +3,22 @@ import { dirname } from "path";
 import { fileURLToPath } from "url";
 
 import { parseFile, save } from "./functions.js";
-import { meta } from "./meta.js";
+import { _meta } from "./meta.js";
 
-const __dirname = dirname(fileURLToPath(import.meta.url));
+const dirname = dirname(fileURLToPath(import.meta.url));
 
 const monsters = [
     "kharid/mactar",
     "kharid/astar",
     "umberhulk"
-].map(x => parseFile(`${__dirname}/../creatures/${x}.json`));
+].map(x => parseFile(`${dirname}/../creatures/${x}.json`));
 
 const data = {
-    meta,
+    ...meta,
     monsters,
 };
 
-const location = `${__dirname}/../vanwa-erea-meta.json`;
+const location = `${dirname}/../vanwa-erea-meta.json`;
 
 save(location, data);
 
