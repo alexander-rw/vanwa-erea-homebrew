@@ -1,0 +1,136 @@
+{
+	"name": "Kharidian Astar",
+	"size": "M",
+	"type": {
+		"type": "humanoid",
+		"tags": [
+			"any race"
+		]
+	},
+	"source": "VANWA",
+	"alignment": [
+		"L",
+		"E"
+	],
+	"ac": [
+		{
+			"ac": 16,
+			"from": [
+				"chain mail"
+			]
+		}
+	],
+	"hp": {
+		"formula": "12d8 + 44",
+		"average": 98
+	},
+	"speed": {
+		"walk": 30
+	},
+	"str": 16,
+	"dex": 10,
+	"con": 18,
+	"int": 14,
+	"wis": 16,
+	"cha": 10,
+	"passive": 16,
+	"cr": "4",
+	"languages": [
+		"Common",
+        "Elvish",
+        "Celestial"
+	],
+	"languageTags": [
+		"C",
+		"E",
+		"P"
+	],
+	"save": {
+		"wis": "+7",
+		"int": "+5"
+	},
+	"skill": {
+		"athletics": "+6",
+		"arcana": "+5",
+		"perception": "+6",
+		"insight": "+6"
+	},
+	"spellcasting": [
+		{
+			"name": "Spellcasting",
+			"headerEntries": [
+				"Spellcasting. The Astar is a 7th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 14}, +7 to hit with spell attacks). The Astar has the following wizard spells prepared:"
+			],
+			"footerEntries": [
+				"spells marked with * are able to be upcasted"
+			],
+			"spells": {
+				"1": {
+					"spells": [
+						"{@spell absorb elements|XGE} *",
+						"{@spell detect magic}",
+						"{@spell guiding bolt}",
+						"{@spell shield}"
+					],
+					"slots": 4
+				},
+				"2": {
+					"spells": [
+						"{@spell lesser restoration}",
+						"{@spell misty step}",
+						"{@spell silence}"
+					],
+					"slots": 3
+				},
+				"3": {
+					"spells": [
+						"{@spell counterspell} *",
+						"{@spell dispel magic} *",
+						"{@spell fly} *",
+						"{@spell hypnotic pattern}"
+					],
+					"slots": 3
+				},
+				"4": {
+					"spells": [
+						"{@spell Otiluke's Resilient Sphere}"
+					],
+					"slots": 1
+				}
+			},
+			"will": [
+				"{@spell lightning lure|SCAG}",
+				"{@spell mage hand}",
+				"{@spell ray of frost}",
+				"{@spell toll the dead|XGE}"
+			],
+			"ability": "wis",
+			"type": "spellcasting"
+		}
+	],
+	"spellcastingTags": [
+		"CW"
+	],
+	"action": [
+		{
+			"name": "Azorius Lawstaff",
+			"entries": [
+				"{@atk mw,rw} {@hit 6} to hit, reach 5 ft. one target. {@h}6 ({@damage 1d6 + 3}) damage."
+			]
+		},
+		{
+			"name": "Detain Creature",
+			"entries": [
+				"One creature within 30ft of the Astar must make a DC15 strength saving throw. On a failed save, blue-white manacles appear round the creature's limbs and the creature is {@condition restrained}. While {@condition restrained}, the creature cannot cast spells."
+			]
+		}
+	],
+	"miscTags": [
+		"RW",
+		"MW"
+	],
+	"conditionInflict": [
+		"restrained",
+		"incapacitated"
+	]
+}
