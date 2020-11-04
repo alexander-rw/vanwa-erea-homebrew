@@ -5,20 +5,20 @@ import { fileURLToPath } from "url";
 import { parseFile, save } from "./functions.js";
 import { _meta } from "./meta.js";
 
-const dirname = dirname(fileURLToPath(import.meta.url));
+const __dirname = dirname(fileURLToPath(import.meta.url));
 
 const monsters = [
     "kharid/mactar",
     "kharid/astar",
     "umberhulk"
-].map(x => parseFile(`${dirname}/../creatures/${x}.json`));
+].map(x => parseFile(`${__dirname}/../creatures/${x}.json`));
 
 const data = {
     ...meta,
     monsters,
 };
 
-const location = `${dirname}/../vanwa-erea-meta.json`;
+const location = `${__dirname}/../vanwa-erea-meta.json`;
 
 save(location, data);
 
