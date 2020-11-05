@@ -1,476 +1,474 @@
 {
-	"meta": {
-		"_meta": {
-			"sources": [
-				{
-					"json": "Vanwa Erea",
-					"abbreviation": "VANWA",
-					"full": "Vanwa Erea Campaign Guide",
-					"authors": [
-						"Outworld Software",
-						"Alexander Reyes-Wainwright"
-					],
-					"version": "1.0",
-					"url": "https://github.com/alexander-rw/vanwa-erea-homebrew",
-					"targetSchema": "1.3.4"
-				}
-			],
-			"dateAdded": 1537874753,
-			"dateLastModified": 1604528361
-		}
-	},
-	"monsters": [
-		{
-			"name": "Kharidian Mactar",
-			"size": "M",
-			"type": {
-				"type": "humanoid",
-				"tags": [
-					"any race"
-				]
-			},
-			"source": "VANWA",
-			"alignment": [
-				"L",
-				"E"
-			],
-			"ac": [
-				{
-					"ac": 17,
-					"from": [
-						"splint mail"
-					]
-				}
-			],
-			"hp": {
-				"formula": "16d8 + 80",
-				"average": 152
-			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 16,
-			"dex": 10,
-			"con": 20,
-			"int": 14,
-			"wis": 18,
-			"cha": 10,
-			"passive": 17,
-			"cr": "7",
-			"languages": [
-				"Common",
-				"Elvish",
-				"Celestial"
-			],
-			"languageTags": [
-				"C",
-				"E",
-				"P"
-			],
-			"save": {
-				"wis": "+7",
-				"int": "+5"
-			},
-			"skill": {
-				"athletics": "+6",
-				"arcana": "+5",
-				"perception": "+7",
-				"insight": "+7"
-			},
-			"spellcasting": [
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"Spellcasting. The Mactar is a 10th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 15}, +7 to hit with spell attacks). The Mactar has the following wizard spells prepared:"
-					],
-					"footerEntries": [
-						"spells marked with * are able to be upcasted"
-					],
-					"spells": {
-						"1": {
-							"spells": [
-								"{@spell absorb elements|XGE} *",
-								"{@spell detect magic}",
-								"{@spell guiding bolt}",
-								"{@spell shield}"
-							],
-							"slots": 4
-						},
-						"2": {
-							"spells": [
-								"{@spell lesser restoration}",
-								"{@spell misty step}",
-								"{@spell silence}"
-							],
-							"slots": 3
-						},
-						"3": {
-							"spells": [
-								"{@spell counterspell} *",
-								"{@spell dispel magic} *",
-								"{@spell fly} *"
-							],
-							"slots": 3
-						},
-						"4": {
-							"spells": [
-								"{@spell Otiluke's Resilient Sphere}"
-							],
-							"slots": 3
-						},
-						"5": {
-							"spells": [
-								"{@spell contagion}",
-								"{@spell greater restoration}"
-							],
-							"slots": 2
-						}
-					},
-					"will": [
-						"{@spell lightning lure|SCAG}",
-						"{@spell mage hand}",
-						"{@spell ray of frost}",
-						"{@spell toll the dead|XGE}"
-					],
-					"ability": "wis",
-					"type": "spellcasting"
-				}
-			],
-			"spellcastingTags": [
-				"CW"
-			],
-			"action": [
-				{
-					"name": "Azorius Lawstaff",
-					"entries": [
-						"{@atk mw,rw} {@hit 6} to hit, reach 5 ft. one target. {@h}6 ({@damage 1d6 + 3}) damage."
-					]
-				},
-				{
-					"name": "Detain Creature (Incapacitate)",
-					"entries": [
-						"One creature within 30ft of the Mactar must make a DC15 strength saving throw. On a failed save, blue-white manacles appear round the creature's limbs and the creature is {@condition restrained}. While {@condition restrained}, the creature is {@condition incapacitated}. "
-					]
-				}
-			],
-			"miscTags": [
-				"RW",
-				"MW"
-			],
-			"conditionInflict": [
-				"restrained",
-				"incapacitated"
-			]
-		},
-		{
-			"name": "Kharidian Astar",
-			"size": "M",
-			"type": {
-				"type": "humanoid",
-				"tags": [
-					"any race"
-				]
-			},
-			"source": "VANWA",
-			"alignment": [
-				"L",
-				"E"
-			],
-			"ac": [
-				{
-					"ac": 16,
-					"from": [
-						"chain mail"
-					]
-				}
-			],
-			"hp": {
-				"formula": "12d8 + 44",
-				"average": 98
-			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 16,
-			"dex": 10,
-			"con": 18,
-			"int": 14,
-			"wis": 16,
-			"cha": 10,
-			"passive": 16,
-			"cr": "4",
-			"languages": [
-				"Common",
-				"Elvish",
-				"Celestial"
-			],
-			"languageTags": [
-				"C",
-				"E",
-				"P"
-			],
-			"save": {
-				"wis": "+7",
-				"int": "+5"
-			},
-			"skill": {
-				"athletics": "+6",
-				"arcana": "+5",
-				"perception": "+6",
-				"insight": "+6"
-			},
-			"spellcasting": [
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"Spellcasting. The Astar is a 7th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 14}, +7 to hit with spell attacks). The Astar has the following wizard spells prepared:"
-					],
-					"footerEntries": [
-						"spells marked with * are able to be upcasted"
-					],
-					"spells": {
-						"1": {
-							"spells": [
-								"{@spell absorb elements|XGE} *",
-								"{@spell detect magic}",
-								"{@spell guiding bolt}",
-								"{@spell shield}"
-							],
-							"slots": 4
-						},
-						"2": {
-							"spells": [
-								"{@spell lesser restoration}",
-								"{@spell misty step}",
-								"{@spell silence}"
-							],
-							"slots": 3
-						},
-						"3": {
-							"spells": [
-								"{@spell counterspell} *",
-								"{@spell dispel magic} *",
-								"{@spell fly} *",
-								"{@spell hypnotic pattern}"
-							],
-							"slots": 3
-						},
-						"4": {
-							"spells": [
-								"{@spell Otiluke's Resilient Sphere}"
-							],
-							"slots": 1
-						}
-					},
-					"will": [
-						"{@spell lightning lure|SCAG}",
-						"{@spell mage hand}",
-						"{@spell ray of frost}",
-						"{@spell toll the dead|XGE}"
-					],
-					"ability": "wis",
-					"type": "spellcasting"
-				}
-			],
-			"spellcastingTags": [
-				"CW"
-			],
-			"action": [
-				{
-					"name": "Azorius Lawstaff",
-					"entries": [
-						"{@atk mw,rw} {@hit 6} to hit, reach 5 ft. one target. {@h}6 ({@damage 1d6 + 3}) damage."
-					]
-				},
-				{
-					"name": "Detain Creature",
-					"entries": [
-						"One creature within 30ft of the Astar must make a DC15 strength saving throw. On a failed save, blue-white manacles appear round the creature's limbs and the creature is {@condition restrained}. While {@condition restrained}, the creature cannot cast spells."
-					]
-				}
-			],
-			"miscTags": [
-				"RW",
-				"MW"
-			],
-			"conditionInflict": [
-				"restrained",
-				"incapacitated"
-			]
-		},
-		{
-			"name": "Hive Colossus",
-			"source": "VANWA",
-			"page": 1,
-			"otherSources": [],
-			"size": "H",
-			"type": {
-				"type": "abberation",
-				"tags": [
-					"Illitharid Hybrid"
-				]
-			},
-			"alignment": [
-				"L",
-				"E"
-			],
-			"ac": [
-				{
-					"ac": 18,
-					"from": [
-						"natural armor"
-					]
-				}
-			],
-			"hp": {
-				"average": 231,
-				"formula": "22d12 + 80"
-			},
-			"speed": {
-				"walk": 40,
-				"burrow": 20,
-				"fly": 40
-			},
-			"str": 24,
-			"dex": 14,
-			"con": 18,
-			"int": 18,
-			"wis": 14,
-			"cha": 12,
-			"save": {
-				"int": "+9",
-				"wis": "+7",
-				"cha": "+6"
-			},
-			"skill": {
-				"athletics": "+12",
-				"perception": "+7",
-				"arcana": "+9",
-				"investigation": "+9"
-			},
-			"senses": [
-				"darkvision 120 ft.",
-				"tremorsense 60 ft."
-			],
-			"passive": 17,
-			"languages": [
-				"Deep Speech",
-				"Undercommon",
-				"Umber Hulk",
-				"telepathy 120ft."
-			],
-			"cr": "17",
-			"trait": [
-				{
-					"name": "Legendary Resistance (2/Day)",
-					"entries": [
-						"If Hive fails a saving throw, it can choose to succeed instead."
-					]
-				},
-				{
-					"name": "Confusing Gaze",
-					"entries": [
-						"When a creature starts its turn within 30 feet of the umber hulk and is able to see Hive's eyes, it can magically force the creature to make a {@dc 15} Charisma saving throw, unless the umber hulk is {@condition incapacitated}.",
-						"On a failed saving throw, the creature can't take reactions until the start of its next turn and rolls a {@dice d8} to determine what it does during that turn. On a 1 to 4, the creature does nothing. On a 5 or 6, the creature takes no action but uses all its movement to move in a random direction. On a 7 or 8, the creature makes one melee attack against a random creature, or it does nothing if no creature is within reach.",
-						"Unless surprised, a creature can avert its eyes to avoid the saving throw at the start of its turn. If the creature does so, it can't see the umber hulk until the start of its next turn, when it can avert its eyes again. If the creature looks at the umber hulk in the meantime, it must immediately make the save."
-					]
-				},
-				{
-					"name": "Tunneler",
-					"entries": [
-						"Hive can burrow through solid rock at half its burrowing speed and leaves a 5 foot-wide, 8-foot-high tunnel in its wake."
-					]
-				},
-				{
-					"name": "Magic Resistance",
-					"entries": [
-						"Hive has advantage on saving throws against spells and other magical effects."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"Hive makes three attacks: two with its claws and one with its mandibles, or tentacles."
-					]
-				},
-				{
-					"name": "Claw",
-					"entries": [
-						"{@atk mw} {@hit 11} to hit, reach 10 ft., one target. {@h}14 ({@damage 1d12 + 7}) slashing damage."
-					]
-				},
-				{
-					"name": "Mandibles",
-					"entries": [
-						"{@atk mw} {@hit 12} to hit, reach 5 ft., one target. {@h}20 ({@damage 2d12 + 7}) slashing damage."
-					]
-				},
-				{
-					"name": "Tentacles",
-					"entries": [
-						"{@atk mw} {@hit 12} to hit, reach 10 ft., one creature. {@h}21 ({@damage 3d10 + 4}) psychic damage. If the target is Large or smaller, it is {@condition grappled} (escape {@dc 15}) and must succeed on a {@dc 17} Intelligence saving throw or be {@condition stunned} until this grapple ends."
-					]
-				},
-				{
-					"name": "Extract Brain",
-					"entries": [
-						"{@atk mw} {@hit 12} to hit, reach 5 ft., one {@condition incapacitated} humanoid {@condition grappled} by Hive. {@h}55 ({@damage 10d10}) piercing damage. If this damage reduces the target to 0 hit points, Hive kills the target by extracting and devouring its brain."
-					]
-				},
-				{
-					"name": "Mind Blast {@recharge 6}",
-					"entries": [
-						"Hive magically emits psychic energy in a 60-foot cone. Each creature in that area must succeed on a {@dc 17} Intelligence saving throw or take 30 ({@damage 4d12 + 4}) psychic damage and be {@condition stunned} for 1 minute. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
-					]
-				}
-			],
-			"legendary": [
-				{
-					"name": "Claws",
-					"entries": [
-						"Hive makes one attack with its tentacles."
-					]
-				},
-				{
-					"name": "Tentacles",
-					"entries": [
-						"Hive makes one attack with its tentacles."
-					]
-				},
-				{
-					"name": "Extract Brain (Costs 2 Actions)",
-					"entries": [
-						"Hive uses Extract Brain."
-					]
-				},
-				{
-					"name": "Mind Blast (Costs 3 Actions)",
-					"entries": [
-						"Hive recharges its Mind Blast and uses it."
-					]
-				}
-			],
-			"environment": [
-				"underdark"
-			],
-			"senseTags": [
-				"SD",
-				"T"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"languageTags": [
-				"OTH"
-			],
-			"damageTags": [
-				"S"
-			],
-			"miscTags": [
-				"MW"
-			]
-		}
-	]
+  "__meta": {
+    "sources": [
+      {
+        "json": "Vanwa Erea",
+        "abbreviation": "VANWA",
+        "full": "Vanwa Erea Campaign Guide",
+        "authors": [
+          "Outworld Software",
+          "Alexander Reyes-Wainwright"
+        ],
+        "version": "1.0",
+        "url": "https://github.com/alexander-rw/vanwa-erea-homebrew",
+        "targetSchema": "1.3.4"
+      }
+    ],
+    "dateAdded": 1537874753,
+    "dateLastModified": 1604535127
+  },
+  "monsters": [
+    {
+      "name": "Hive Colossus",
+      "source": "VANWA",
+      "page": 1,
+      "otherSources": [],
+      "size": "H",
+      "type": {
+        "type": "abberation",
+        "tags": [
+          "Illitharid Hybrid"
+        ]
+      },
+      "alignment": [
+        "L",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 18,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "average": 231,
+        "formula": "22d12 + 80"
+      },
+      "speed": {
+        "walk": 40,
+        "burrow": 20,
+        "fly": 40
+      },
+      "str": 24,
+      "dex": 14,
+      "con": 18,
+      "int": 18,
+      "wis": 14,
+      "cha": 12,
+      "save": {
+        "int": "+9",
+        "wis": "+7",
+        "cha": "+6"
+      },
+      "skill": {
+        "athletics": "+12",
+        "perception": "+7",
+        "arcana": "+9",
+        "investigation": "+9"
+      },
+      "senses": [
+        "darkvision 120 ft.",
+        "tremorsense 60 ft."
+      ],
+      "passive": 17,
+      "languages": [
+        "Deep Speech",
+        "Undercommon",
+        "Umber Hulk",
+        "telepathy 120ft."
+      ],
+      "cr": "17",
+      "trait": [
+        {
+          "name": "Legendary Resistance (2/Day)",
+          "entries": [
+            "If Hive fails a saving throw, it can choose to succeed instead."
+          ]
+        },
+        {
+          "name": "Confusing Gaze",
+          "entries": [
+            "When a creature starts its turn within 30 feet of the umber hulk and is able to see Hive's eyes, it can magically force the creature to make a {@dc 15} Charisma saving throw, unless the umber hulk is {@condition incapacitated}.",
+            "On a failed saving throw, the creature can't take reactions until the start of its next turn and rolls a {@dice d8} to determine what it does during that turn. On a 1 to 4, the creature does nothing. On a 5 or 6, the creature takes no action but uses all its movement to move in a random direction. On a 7 or 8, the creature makes one melee attack against a random creature, or it does nothing if no creature is within reach.",
+            "Unless surprised, a creature can avert its eyes to avoid the saving throw at the start of its turn. If the creature does so, it can't see the umber hulk until the start of its next turn, when it can avert its eyes again. If the creature looks at the umber hulk in the meantime, it must immediately make the save."
+          ]
+        },
+        {
+          "name": "Tunneler",
+          "entries": [
+            "Hive can burrow through solid rock at half its burrowing speed and leaves a 5 foot-wide, 8-foot-high tunnel in its wake."
+          ]
+        },
+        {
+          "name": "Magic Resistance",
+          "entries": [
+            "Hive has advantage on saving throws against spells and other magical effects."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "Hive makes three attacks: two with its claws and one with its mandibles, or tentacles."
+          ]
+        },
+        {
+          "name": "Claw",
+          "entries": [
+            "{@atk mw} {@hit 11} to hit, reach 10 ft., one target. {@h}14 ({@damage 1d12 + 7}) slashing damage."
+          ]
+        },
+        {
+          "name": "Mandibles",
+          "entries": [
+            "{@atk mw} {@hit 12} to hit, reach 5 ft., one target. {@h}20 ({@damage 2d12 + 7}) slashing damage."
+          ]
+        },
+        {
+          "name": "Tentacles",
+          "entries": [
+            "{@atk mw} {@hit 12} to hit, reach 10 ft., one creature. {@h}21 ({@damage 3d10 + 4}) psychic damage. If the target is Large or smaller, it is {@condition grappled} (escape {@dc 15}) and must succeed on a {@dc 17} Intelligence saving throw or be {@condition stunned} until this grapple ends."
+          ]
+        },
+        {
+          "name": "Extract Brain",
+          "entries": [
+            "{@atk mw} {@hit 12} to hit, reach 5 ft., one {@condition incapacitated} humanoid {@condition grappled} by Hive. {@h}55 ({@damage 10d10}) piercing damage. If this damage reduces the target to 0 hit points, Hive kills the target by extracting and devouring its brain."
+          ]
+        },
+        {
+          "name": "Mind Blast {@recharge 6}",
+          "entries": [
+            "Hive magically emits psychic energy in a 60-foot cone. Each creature in that area must succeed on a {@dc 17} Intelligence saving throw or take 30 ({@damage 4d12 + 4}) psychic damage and be {@condition stunned} for 1 minute. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+          ]
+        }
+      ],
+      "legendary": [
+        {
+          "name": "Claws",
+          "entries": [
+            "Hive makes one attack with its tentacles."
+          ]
+        },
+        {
+          "name": "Tentacles",
+          "entries": [
+            "Hive makes one attack with its tentacles."
+          ]
+        },
+        {
+          "name": "Extract Brain (Costs 2 Actions)",
+          "entries": [
+            "Hive uses Extract Brain."
+          ]
+        },
+        {
+          "name": "Mind Blast (Costs 3 Actions)",
+          "entries": [
+            "Hive recharges its Mind Blast and uses it."
+          ]
+        }
+      ],
+      "environment": [
+        "underdark"
+      ],
+      "senseTags": [
+        "SD",
+        "T"
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "languageTags": [
+        "OTH"
+      ],
+      "damageTags": [
+        "S"
+      ],
+      "miscTags": [
+        "MW"
+      ]
+    },
+    {
+      "name": "Kharidian Mactar",
+      "size": "M",
+      "type": {
+        "type": "humanoid",
+        "tags": [
+          "any race"
+        ]
+      },
+      "source": "VANWA",
+      "alignment": [
+        "L",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 17,
+          "from": [
+            "splint mail"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "16d8 + 80",
+        "average": 152
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 16,
+      "dex": 10,
+      "con": 20,
+      "int": 14,
+      "wis": 18,
+      "cha": 10,
+      "passive": 17,
+      "cr": "7",
+      "languages": [
+        "Common",
+        "Elvish",
+        "Celestial"
+      ],
+      "languageTags": [
+        "C",
+        "E",
+        "P"
+      ],
+      "save": {
+        "wis": "+7",
+        "int": "+5"
+      },
+      "skill": {
+        "athletics": "+6",
+        "arcana": "+5",
+        "perception": "+7",
+        "insight": "+7"
+      },
+      "spellcasting": [
+        {
+          "name": "Spellcasting",
+          "headerEntries": [
+            "Spellcasting. The Mactar is a 10th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 15}, +7 to hit with spell attacks). The Mactar has the following wizard spells prepared:"
+          ],
+          "footerEntries": [
+            "spells marked with * are able to be upcasted"
+          ],
+          "spells": {
+            "1": {
+              "spells": [
+                "{@spell absorb elements|XGE} *",
+                "{@spell detect magic}",
+                "{@spell guiding bolt}",
+                "{@spell shield}"
+              ],
+              "slots": 4
+            },
+            "2": {
+              "spells": [
+                "{@spell lesser restoration}",
+                "{@spell misty step}",
+                "{@spell silence}"
+              ],
+              "slots": 3
+            },
+            "3": {
+              "spells": [
+                "{@spell counterspell} *",
+                "{@spell dispel magic} *",
+                "{@spell fly} *"
+              ],
+              "slots": 3
+            },
+            "4": {
+              "spells": [
+                "{@spell Otiluke's Resilient Sphere}"
+              ],
+              "slots": 3
+            },
+            "5": {
+              "spells": [
+                "{@spell contagion}",
+                "{@spell greater restoration}"
+              ],
+              "slots": 2
+            }
+          },
+          "will": [
+            "{@spell lightning lure|SCAG}",
+            "{@spell mage hand}",
+            "{@spell ray of frost}",
+            "{@spell toll the dead|XGE}"
+          ],
+          "ability": "wis",
+          "type": "spellcasting"
+        }
+      ],
+      "spellcastingTags": [
+        "CW"
+      ],
+      "action": [
+        {
+          "name": "Azorius Lawstaff",
+          "entries": [
+            "{@atk mw,rw} {@hit 6} to hit, reach 5 ft. one target. {@h}6 ({@damage 1d6 + 3}) damage."
+          ]
+        },
+        {
+          "name": "Detain Creature (Incapacitate)",
+          "entries": [
+            "One creature within 30ft of the Mactar must make a DC15 strength saving throw. On a failed save, blue-white manacles appear round the creature's limbs and the creature is {@condition restrained}. While {@condition restrained}, the creature is {@condition incapacitated}. "
+          ]
+        }
+      ],
+      "miscTags": [
+        "RW",
+        "MW"
+      ],
+      "conditionInflict": [
+        "restrained",
+        "incapacitated"
+      ]
+    },
+    {
+      "name": "Kharidian Astar",
+      "size": "M",
+      "type": {
+        "type": "humanoid",
+        "tags": [
+          "any race"
+        ]
+      },
+      "source": "VANWA",
+      "alignment": [
+        "L",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 16,
+          "from": [
+            "chain mail"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "12d8 + 44",
+        "average": 98
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 16,
+      "dex": 10,
+      "con": 18,
+      "int": 14,
+      "wis": 16,
+      "cha": 10,
+      "passive": 16,
+      "cr": "4",
+      "languages": [
+        "Common",
+        "Elvish",
+        "Celestial"
+      ],
+      "languageTags": [
+        "C",
+        "E",
+        "P"
+      ],
+      "save": {
+        "wis": "+7",
+        "int": "+5"
+      },
+      "skill": {
+        "athletics": "+6",
+        "arcana": "+5",
+        "perception": "+6",
+        "insight": "+6"
+      },
+      "spellcasting": [
+        {
+          "name": "Spellcasting",
+          "headerEntries": [
+            "Spellcasting. The Astar is a 7th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 14}, +7 to hit with spell attacks). The Astar has the following wizard spells prepared:"
+          ],
+          "footerEntries": [
+            "spells marked with * are able to be upcasted"
+          ],
+          "spells": {
+            "1": {
+              "spells": [
+                "{@spell absorb elements|XGE} *",
+                "{@spell detect magic}",
+                "{@spell guiding bolt}",
+                "{@spell shield}"
+              ],
+              "slots": 4
+            },
+            "2": {
+              "spells": [
+                "{@spell lesser restoration}",
+                "{@spell misty step}",
+                "{@spell silence}"
+              ],
+              "slots": 3
+            },
+            "3": {
+              "spells": [
+                "{@spell counterspell} *",
+                "{@spell dispel magic} *",
+                "{@spell fly} *",
+                "{@spell hypnotic pattern}"
+              ],
+              "slots": 3
+            },
+            "4": {
+              "spells": [
+                "{@spell Otiluke's Resilient Sphere}"
+              ],
+              "slots": 1
+            }
+          },
+          "will": [
+            "{@spell lightning lure|SCAG}",
+            "{@spell mage hand}",
+            "{@spell ray of frost}",
+            "{@spell toll the dead|XGE}"
+          ],
+          "ability": "wis",
+          "type": "spellcasting"
+        }
+      ],
+      "spellcastingTags": [
+        "CW"
+      ],
+      "action": [
+        {
+          "name": "Azorius Lawstaff",
+          "entries": [
+            "{@atk mw,rw} {@hit 6} to hit, reach 5 ft. one target. {@h}6 ({@damage 1d6 + 3}) damage."
+          ]
+        },
+        {
+          "name": "Detain Creature",
+          "entries": [
+            "One creature within 30ft of the Astar must make a DC15 strength saving throw. On a failed save, blue-white manacles appear round the creature's limbs and the creature is {@condition restrained}. While {@condition restrained}, the creature cannot cast spells."
+          ]
+        }
+      ],
+      "miscTags": [
+        "RW",
+        "MW"
+      ],
+      "conditionInflict": [
+        "restrained",
+        "incapacitated"
+      ]
+    }
+  ]
 }
