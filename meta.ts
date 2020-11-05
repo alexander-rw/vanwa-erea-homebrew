@@ -2,11 +2,10 @@ export default {
     "__meta": {
         "sources": [
             {
-                "json": "Vanwa Erea",
+                "json": "VanwaEreaMeta",
                 "abbreviation": "VANWA",
                 "full": "Vanwa Erea Campaign Guide",
                 "authors": [
-                    "Outworld Software",
                     "Alexander Reyes-Wainwright"
                 ],
                 "version": "1.0",

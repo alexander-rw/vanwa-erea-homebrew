@@ -21,6 +21,6 @@ for await (const { path } of walk("./creatures", { match: [/\.json/] })) {
 
 console.log(`${EOL}${new Date().toISOString()}: Writing file '${fileName}'`);
 
-await Deno.writeTextFile(`./${fileName}`, JSON.stringify({ ...meta, monsters }, null, 2));
+await Deno.writeTextFile(fileName, JSON.stringify({ ...meta, monster: monsters }, null, 2));
 
 console.log(EOL);
