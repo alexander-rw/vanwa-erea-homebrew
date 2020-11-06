@@ -127,7 +127,29 @@
 		{
 			"name": "Detain Creature (Incapacitate)",
 			"entries": [
-				"One creature within 30ft of the Mactar must make a DC15 strength saving throw. On a failed save, blue-white manacles appear round the creature's limbs and the creature is {@condition restrained}. While {@condition restrained}, the creature is {@condition incapacitated}. "
+				"One creature within 30ft of the Mactar must make a {@dc 15} strength saving throw. On a failed save, blue-white manacles appear round the creature's limbs and the creature is {@condition restrained}. While {@condition restrained}, the creature is {@condition incapacitated}. "
+			]
+		}
+	],
+	"trait": [
+		{
+			"name": "Null And Void",
+			"entries": [
+				"When another creature within 30ft takes an action or bonus action that has a magical effect, the Mactar can use its reaction to expend a spell slot of third level or higher. The target must then make a {@dc 15} wisdom saving throw. On a failed save, the target's action is countered and does not take effect."
+			]
+		},
+		{
+			"name": "Improved Detain Creature",
+			"entries": [
+				"While the creature is {@condition incapacitated} by the Mactar's Detain Feature ability, it is {@condition incapacitated}."
+			]
+		}
+	],
+	"reaction": [
+		{
+			"name": "Null And Void",
+			"entries": [
+				"When another creature within 30ft takes an action or bonus action that has a magical effect, the Mactar can use its reaction to expend a spell slot of third level or higher. The target must then make a {@dc 15} wisdom saving throw. On a failed save, the target's action is countered and does not take effect."
 			]
 		}
 	],

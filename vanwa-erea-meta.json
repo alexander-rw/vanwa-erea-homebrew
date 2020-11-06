@@ -14,7 +14,7 @@
       }
     ],
     "dateAdded": 1537874753,
-    "dateLastModified": 1604615099
+    "dateLastModified": 1604622427
   },
   "monster": [
     {
@@ -320,7 +320,29 @@
         {
           "name": "Detain Creature (Incapacitate)",
           "entries": [
-            "One creature within 30ft of the Mactar must make a DC15 strength saving throw. On a failed save, blue-white manacles appear round the creature's limbs and the creature is {@condition restrained}. While {@condition restrained}, the creature is {@condition incapacitated}. "
+            "One creature within 30ft of the Mactar must make a {@dc 15} strength saving throw. On a failed save, blue-white manacles appear round the creature's limbs and the creature is {@condition restrained}. While {@condition restrained}, the creature is {@condition incapacitated}. "
+          ]
+        }
+      ],
+      "trait": [
+        {
+          "name": "Null And Void",
+          "entries": [
+            "When another creature within 30ft takes an action or bonus action that has a magical effect, the Mactar can use its reaction to expend a spell slot of third level or higher. The target must then make a {@dc 15} wisdom saving throw. On a failed save, the target's action is countered and does not take effect."
+          ]
+        },
+        {
+          "name": "Improved Detain Creature",
+          "entries": [
+            "While the creature is {@condition incapacitated} by the Mactar's Detain Feature ability, it is {@condition incapacitated}."
+          ]
+        }
+      ],
+      "reaction": [
+        {
+          "name": "Null And Void",
+          "entries": [
+            "When another creature within 30ft takes an action or bonus action that has a magical effect, the Mactar can use its reaction to expend a spell slot of third level or higher. The target must then make a {@dc 15} wisdom saving throw. On a failed save, the target's action is countered and does not take effect."
           ]
         }
       ],
@@ -467,6 +489,198 @@
       "conditionInflict": [
         "restrained",
         "incapacitated"
+      ]
+    },
+    {
+      "name": "Kharidian Isperar",
+      "size": "M",
+      "type": {
+        "type": "humanoid",
+        "tags": [
+          "any race"
+        ]
+      },
+      "source": "Vanwa Erea",
+      "alignment": [
+        "L",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 19,
+          "from": [
+            "Kharidian plate armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "20d8 + 100",
+        "average": 190
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 18,
+      "dex": 8,
+      "con": 20,
+      "int": 16,
+      "wis": 20,
+      "cha": 12,
+      "passive": 19,
+      "cr": "7",
+      "languages": [
+        "Common",
+        "Elvish",
+        "Celestial"
+      ],
+      "languageTags": [
+        "C",
+        "E",
+        "CE"
+      ],
+      "save": {
+        "wis": "+9",
+        "int": "+7"
+      },
+      "skill": {
+        "athletics": "+8",
+        "arcana": "+7",
+        "perception": "+9",
+        "insight": "+9"
+      },
+      "spellcasting": [
+        {
+          "name": "Spellcasting",
+          "headerEntries": [
+            "Spellcasting. The Isperar is a 17th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 17}, +9 to hit with spell attacks). The Isperar has the following wizard spells prepared:"
+          ],
+          "footerEntries": [
+            "spells marked with * are able to be upcasted"
+          ],
+          "will": [
+            "{@spell lightning lure|SCAG}",
+            "{@spell mage hand}",
+            "{@spell ray of frost}",
+            "{@spell toll the dead|XGE}"
+          ],
+          "spells": {
+            "1": {
+              "spells": [
+                "{@spell absorb elements|XGE} *",
+                "{@spell detect magic}",
+                "{@spell guiding bolt}",
+                "{@spell shield}"
+              ],
+              "slots": 4
+            },
+            "2": {
+              "spells": [
+                "{@spell lesser restoration}",
+                "{@spell misty step}",
+                "{@spell silence}"
+              ],
+              "slots": 3
+            },
+            "3": {
+              "spells": [
+                "{@spell counterspell} *",
+                "{@spell dispel magic} *",
+                "{@spell fly} *"
+              ],
+              "slots": 3
+            },
+            "4": {
+              "spells": [
+                "{@spell Otiluke's Resilient Sphere}"
+              ],
+              "slots": 3
+            },
+            "5": {
+              "spells": [
+                "{@spell cone of cold}",
+                "{@spell contagion}",
+                "{@spell greater restoration}"
+              ],
+              "slots": 2
+            },
+            "6": {
+              "spells": [
+                "{@spell heal}",
+                "{@spell mental prison|XGE}"
+              ],
+              "slots": 1
+            },
+            "7": {
+              "spells": [
+                "{@spell crown of stars|XGE}",
+                "{@spell forcecage}"
+              ],
+              "slots": 1
+            },
+            "8": {
+              "spells": [
+                "{@spell antimagic field}",
+                "{@spell feeblemind}"
+              ],
+              "slots": 1
+            },
+            "9": {
+              "spells": [
+                "{@spell mass heal}"
+              ],
+              "slots": 1
+            }
+          },
+          "ability": "wis",
+          "type": "spellcasting"
+        }
+      ],
+      "spellcastingTags": [
+        "CW"
+      ],
+      "action": [
+        {
+          "name": "Azorius Lawstaff",
+          "entries": [
+            "{@atk mw} {@hit 8} to hit, reach 5 ft. one target. {@h}10 ({@damage 2d6 + 3}) damage."
+          ]
+        },
+        {
+          "name": "Detain Creature (Paralyze)",
+          "entries": [
+            "Up to three creature within 30ft of the Isperar must make a DC17 strength saving throw. On a failed save, blue-white manacles appear round the creature's limbs and the creature is {@condition restrained}. While {@condition restrained}, the creature is {@condition paralyzed}. "
+          ]
+        }
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "conditionInflict": [
+        "restrained",
+        "paralyzed",
+        "incapacitated"
+      ],
+      "trait": [
+        {
+          "name": "Objection Sustained",
+          "entries": [
+            "Whenever a creature fails a saving throw caused by a spell the Isperar casts that does not deal damage to the creature, or whenever the Isperar casts counterspell or uses its Null And Void feature, it may immediately use the Detain Creature ability on that creature without using an action. "
+          ]
+        },
+        {
+          "name": "Improved Detain Creature",
+          "entries": [
+            "The Isperar's Detain Creature ability can now be maintained on up to three targets at any one time. While the creature is {@condition incapacitated} by the Detain Feature ability, it is {@condition paralyzed}. Additionally, The Isperar's Detain Creature ability can be maintained on up to three creatures at once."
+          ]
+        }
+      ],
+      "reaction": [
+        {
+          "name": "Null And Void",
+          "entries": [
+            "When another creature within 30ft takes an action or bonus action that has a magical effect, the Isperar can use its reaction to expend a spell slot of 3rd level or higher. The target must then make a {@dc 15} wisdom saving throw. On a failed save, the target's action is countered and does not take effect."
+          ]
+        }
       ]
     }
   ]
