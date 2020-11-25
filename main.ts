@@ -4,8 +4,6 @@ import { parse as parseArgs } from "https://deno.land/std/flags/mod.ts";
 import meta from "./meta.ts";
 
 const { fileName } = parseArgs(Deno.args);
-const EOL = "\n";
-console.log(EOL);
 
 const monsters: unknown[] = [];
 
@@ -19,8 +17,6 @@ for await (const { path } of walk("./creatures", { match: [/\.json/] })) {
     }
 }
 
-console.log(`${EOL}${new Date().toISOString()}: Writing file '${fileName}'`);
+console.log(`${new Date().toISOString()}: Writing file '${fileName}'`);
 
 await Deno.writeTextFile(fileName, JSON.stringify({ ...meta, monster: monsters }, null, 2));
-
-console.log(EOL);

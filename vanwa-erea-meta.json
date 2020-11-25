@@ -14,9 +14,172 @@
       }
     ],
     "dateAdded": 1537874753,
-    "dateLastModified": 1604622427
+    "dateLastModified": 1606328470
   },
   "monster": [
+    {
+      "name": "Changeling Assassin",
+      "source": "VANWA",
+      "page": 343,
+      "size": "M",
+      "type": {
+        "type": "humanoid",
+        "tags": [
+          "changeling"
+        ]
+      },
+      "alignment": [
+        "L",
+        "NX",
+        "C",
+        "NY",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 19,
+          "from": [
+            "+2 leather armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "13d8 + 39",
+        "average": 97
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 8,
+      "dex": 22,
+      "con": 16,
+      "int": 16,
+      "wis": 13,
+      "cha": 16,
+      "save": {
+        "dex": "+12",
+        "int": "+9",
+        "wis": "+7"
+      },
+      "skill": {
+        "acrobatics": "+12",
+        "deception": "+15",
+        "perception": "+7",
+        "stealth": "+18",
+        "sleight of hand": "+18",
+        "persuasion": "+15",
+        "arcana": "+9",
+        "investigation": "+9"
+      },
+      "passive": 17,
+      "resist": [
+        "poison"
+      ],
+      "languages": [
+        "Thieves' cant",
+        "common",
+        "elvish",
+        "abyssal",
+        "celestial"
+      ],
+      "cr": "17",
+      "trait": [
+        {
+          "name": "Assassinate",
+          "entries": [
+            "During its first turn, the assassin has advantage on attack rolls against any creature that hasn't taken a turn. Any hit the assassin scores against a surprised creature is a critical hit."
+          ]
+        },
+        {
+          "name": "Evasion",
+          "entries": [
+            "If the assassin is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the assassin instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+          ]
+        },
+        {
+          "name": "Sneak Attack (1/Turn)",
+          "entries": [
+            "The assassin deals an extra 32 ({@damage 9d6}) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the assassin that isn't {@condition incapacitated} and the assassin doesn't have disadvantage on the attack roll."
+          ]
+        },
+        {
+          "name": "Death Strike (1/short or long rest)",
+          "entries": [
+            "When the Assassin hits a creature with a weapon attack and has advantage on that attack, the creature must make a {@dc 20} Constitution saving throw. On a failed save, double the damage of the assassin's attack against the creature."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The assassin makes two dagger attacks."
+          ]
+        },
+        {
+          "name": "Dagger",
+          "entries": [
+            "{@atk mw,rw} {@hit 12} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}4 ({@damage 1d4 + 6}) piercing damage."
+          ]
+        }
+      ],
+      "altArt": [
+        {
+          "name": "Vistana Assassin",
+          "source": "CoS"
+        }
+      ],
+      "traitTags": [
+        "Sneak Attack"
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "languageTags": [
+        "TC"
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "miscTags": [
+        "RW",
+        "MW",
+        "THW"
+      ],
+      "tokenUrl": "https://noads.5e.tools/img/MM/Assassin.png?v=1.116.7",
+      "fluff": {
+        "name": "Assassin",
+        "source": "MM",
+        "entries": [
+          {
+            "type": "entries",
+            "entries": [
+              {
+                "type": "entries",
+                "entries": [
+                  "Trained in the use of poison, assassins are remorseless killers who work for nobles, guildmasters, sovereigns, and anyone else who can afford them."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "isNpc": true,
+      "reaction": [
+        {
+          "name": "Unsettling Visage",
+          "entries": [
+            "When a creature makes a weapon attack against the assassin, the assassin can use its reaction to impose disadvantage on the attack roll."
+          ]
+        }
+      ],
+      "senses": [
+        "blindsight 10 ft."
+      ],
+      "senseTags": [
+        "B"
+      ]
+    },
     {
       "name": "Hive Colossus",
       "source": "VANWA",
