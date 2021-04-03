@@ -9,11 +9,16 @@ const monsters: unknown[] = [];
 
 for await (const { path } of walk("./creatures", { match: [/\.json/] })) {
     const d = await Deno.readTextFile(path);
-    const data = JSON.parse(d);
+
+    try {
+        const data = JSON.parse(d);
     
-    if (data && Object.keys(data).length > 0) {
-        console.log(`Parsing ${path}`);
-        monsters.push(data);
+        if (data && Object.keys(data).length > 0) {
+            console.log(`Parsing ${path}`);
+            monsters.push(data);
+        }
+    } catch(e) {
+        console.log(`Path: ${path}`, e);
     }
 }
 
