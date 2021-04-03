@@ -14,7 +14,7 @@
       }
     ],
     "dateAdded": 1537874753,
-    "dateLastModified": 1617445028
+    "dateLastModified": 1617445127
   },
   "monster": [
     {
@@ -663,7 +663,7 @@
           "any race"
         ]
       },
-      "source": "Vanwa Erea",
+      "source": "VANWA",
       "alignment": [
         "L",
         "E"
