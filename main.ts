@@ -1,7 +1,7 @@
 import { walk } from "https://deno.land/std@0.75.0/fs/walk.ts";
 import { parse as parseArgs } from "https://deno.land/std/flags/mod.ts";
 
-import meta from "./meta.ts";
+import { meta } from "./meta.ts";
 
 const { fileName } = parseArgs(Deno.args);
 

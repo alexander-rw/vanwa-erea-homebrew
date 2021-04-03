@@ -1,0 +1,179 @@
+{
+	"name": "Malygos Mandros (Evocation)",
+	"source": "VANWA",
+	"page": 2,
+	"size": "M",
+	"type": {
+		"type": "fiend",
+		"tags": [
+			"any race"
+		]
+	},
+	"alignment": [
+		"A"
+	],
+	"ac": [
+		12,
+		{
+			"ac": 15,
+			"condition": "with {@spell mage armor}",
+			"braces": true
+		}
+	],
+	"hp": {
+		"formula": "14d8 + 28",
+		"average": 91
+	},
+	"speed": {
+		"walk": 30
+	},
+	"str": 8,
+	"dex": 14,
+	"con": 14,
+	"int": 18,
+	"wis": 16,
+	"cha": 10,
+	"save": {
+		"int": "+8",
+		"wis": "+7"
+	},
+	"skill": {
+		"arcana": "+8",
+		"history": "+8",
+		"religion": "+8",
+		"perception": "+7"
+	},
+	"passive": 17,
+	"resist": [
+		"necrotic"
+	],
+	"languages": [
+		"any four languages"
+	],
+	"cr": "9",
+	"spellcasting": [
+		{
+			"name": "Spellcasting",
+			"headerEntries": [
+				"The necromancer is a 12th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 15}, {@hit 7} to hit with spell attacks). The necromancer has the following wizard spells prepared:"
+			],
+			"spells": {
+				"0": {
+					"spells": [
+						"{@spell chill touch}",
+						"{@spell dancing lights}",
+						"{@spell mage hand}",
+						"{@spell mending}"
+					]
+				},
+				"1": {
+					"slots": 4,
+					"spells": [
+						"{@spell false life}*",
+						"{@spell mage armor}",
+						"{@spell ray of sickness}*"
+					]
+				},
+				"2": {
+					"slots": 3,
+					"spells": [
+						"{@spell blindness/deafness}*",
+						"{@spell ray of enfeeblement}*",
+						"{@spell web}"
+					]
+				},
+				"3": {
+					"slots": 3,
+					"spells": [
+						"{@spell animate dead}*",
+						"{@spell bestow curse}*",
+						"{@spell vampiric touch}*"
+					]
+				},
+				"4": {
+					"slots": 3,
+					"spells": [
+						"{@spell blight}*",
+						"{@spell dimension door}",
+						"{@spell stoneskin}"
+					]
+				},
+				"5": {
+					"slots": 2,
+					"spells": [
+						"{@spell Bigby's hand}",
+						"{@spell cloudkill}"
+					]
+				},
+				"6": {
+					"slots": 1,
+					"spells": [
+						"{@spell circle of death}*"
+					]
+				}
+			},
+			"footerEntries": [
+				"*Necromancy spell of 1st level or higher"
+			],
+			"ability": "int",
+			"type": "spellcasting"
+		}
+	],
+	"trait": [
+		{
+			"name": "Grim Harvest (1/Turn)",
+			"entries": [
+				"When necromancer kills a creature that is neither a construct nor undead with a spell of 1st level or higher, the necromancer regains hit points equal to twice the spell's level, or three times if it is a necromancy spell."
+			]
+		}
+	],
+	"action": [
+		{
+			"name": "Withering Touch",
+			"entries": [
+				"{@atk ms} {@hit 8} to hit, reach 5 ft., one creature. {@h}13 ({@damage 2d12}) necrotic damage."
+			]
+		}
+	],
+	"environment": [
+		"desert",
+		"urban"
+	],
+	"soundClip": {
+		"type": "external",
+		"url": "https://noads.5e.tools/audio/bestiary/necromancer.mp3?v=1.117.3"
+	},
+	"languageTags": [
+		"X"
+	],
+	"damageTags": [
+		"N"
+	],
+	"spellcastingTags": [
+		"CW"
+	],
+	"tokenUrl": "https://noads.5e.tools/img/VGM/Necromancer.png?v=1.117.3",
+	"fluff": {
+		"name": "Necromancer",
+		"source": "VGM",
+		"entries": [
+			{
+				"type": "entries",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Necromancers are specialist wizards who study the interaction of life, death, and undeath. Some like to dig up corpses to create undead slaves. A few use their powers for good, becoming hunters of the undead and risking their lives to save others."
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	"shortName": true
+}
