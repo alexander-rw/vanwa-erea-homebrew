@@ -13,27 +13,23 @@
 		"A"
 	],
 	"ac": [
-		12,
-		{
-			"ac": 15,
-			"condition": "with {@spell mage armor}",
-			"braces": true
-		}
+		17
 	],
 	"hp": {
-		"formula": "14d8 + 28",
-		"average": 91
+		"formula": "17d8 + 68",
+		"average": 158
 	},
 	"speed": {
 		"walk": 30
 	},
 	"str": 8,
-	"dex": 14,
-	"con": 14,
+	"dex": 16,
+	"con": 18,
 	"int": 18,
 	"wis": 16,
 	"cha": 10,
 	"save": {
+		"dex": "+7",
 		"int": "+8",
 		"wis": "+7"
 	},
@@ -48,14 +44,17 @@
 		"necrotic"
 	],
 	"languages": [
-		"any four languages"
+		"Draconic",
+		"Elvish",
+		"Common",
+		"Infernal"
 	],
 	"cr": "9",
 	"spellcasting": [
 		{
 			"name": "Spellcasting",
 			"headerEntries": [
-				"The necromancer is a 12th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 15}, {@hit 7} to hit with spell attacks). The necromancer has the following wizard spells prepared:"
+				"Sylceran is a 13th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 16}, {@hit 8} to hit with spell attacks). The necromancer has the following wizard spells prepared:"
 			],
 			"spells": {
 				"0": {

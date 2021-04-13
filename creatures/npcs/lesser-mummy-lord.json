@@ -1,0 +1,122 @@
+{
+	"name": "Lesser Mummy Lord",
+	"source": "VANWA",
+	"page": 1,
+	"size": "M",
+	"type": "undead",
+	"alignment": [
+		"L",
+		"E"
+	],
+	"ac": [
+		{
+			"ac": 14,
+			"from": [
+				"natural armor"
+			]
+		}
+	],
+	"hp": {
+		"formula": "9d8 + 18",
+		"average": 58
+	},
+	"speed": {
+		"walk": 30
+	},
+	"str": 18,
+	"dex": 8,
+	"con": 15,
+	"int": 11,
+	"wis": 16,
+	"cha": 12,
+	"save": {
+		"con": "+5",
+		"int": "+3",
+		"wis": "+6"
+	},
+	"skill": {
+		"history": "+3",
+		"religion": "+3"
+	},
+	"senses": [
+		"darkvision 60 ft."
+	],
+	"passive": 13,
+	"immune": [
+		"necrotic",
+		"poison",
+		{
+			"immune": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"note": "from nonmagical attacks",
+			"cond": true
+		}
+	],
+	"vulnerable": [
+		"fire"
+	],
+	"conditionImmune": [
+		"charmed",
+		"exhaustion",
+		"poisoned"
+	],
+	"languages": [
+		"the languages it knew in life"
+	],
+	"cr": "6",
+	"action": [
+		{
+			"name": "Multiattack",
+			"entries": [
+				"The mummy attacks twice with its rotting fist."
+			]
+		},
+		{
+			"name": "Rotting Fist",
+			"entries": [
+				"{@atk mw} {@hit Your spellcasting ability modifier} to hit, reach 5 ft., one target. ({@damage 3d6 + 3}) necrotic damage. The mummy lord regains hit points equal to half the damage dealt."
+			]
+		},
+		{
+			"name": "Blinding Dust",
+			"entries": [
+				"Blinding dust and sand swirls magically around the mummy lord. Each creature within 5 feet of the mummy lord must succeed on a {@dc 13} Constitution saving throw or be {@condition blinded} until the end of the creature's next turn."
+			]
+		},
+		{
+			"name": "Dreadful Glare",
+			"entries": [
+				"The mummy lord targets one creature it can see within 60 feet of it. If the target can see the mummy lord, it must succeed on a {@dc 13} Wisdom saving throw against this magic or take ({@damage 3d4 + 3}) and become {@condition frightened} until the end of the mummy's next turn. If the target fails the saving throw by 5 or more, it is also {@condition paralyzed} for the same duration. A target that succeeds on the saving throw is immune to the Dreadful Glare of all mummies and mummy lords for the next 24 hours."
+			]
+		}
+	],
+	"environment": [
+		"desert"
+	],
+	"soundClip": {
+		"type": "external",
+		"url": "https://5e.tools/audio/bestiary/mummy-lord.mp3?v=1.126.0"
+	},
+	"senseTags": [
+		"D"
+	],
+	"actionTags": [
+		"Multiattack"
+	],
+	"languageTags": [
+		"LF"
+	],
+	"damageTags": [
+		"B",
+		"N"
+	],
+	"miscTags": [
+		"MW",
+		"AOE"
+	],
+	"hasFluff": true,
+	"tokenUrl": "https://5e.tools/img/MM/Mummy Lord.png?v=1.126.0"
+}

@@ -9,5 +9,6 @@ SENT TO LUCIEN:
 - T Rex samples
 - Displacer beast
 
+- undead dragon parts
+- spawn of kyuss
 - Lonely
-- 
