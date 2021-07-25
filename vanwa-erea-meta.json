@@ -14,7 +14,7 @@
       }
     ],
     "dateAdded": 1537874753,
-    "dateLastModified": 1627215685
+    "dateLastModified": 1627215779
   },
   "monster": [
     {
@@ -2319,7 +2319,7 @@
       "legendaryActions": 3
     },
     {
-      "name": "Drow House Captain",
+      "name": "Dantrag Baerne",
       "source": "VANWA",
       "page": 184,
       "size": "M",
