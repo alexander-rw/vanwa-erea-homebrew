@@ -2,8 +2,7 @@
     "deno.enable": true,
     "deno.lint": true,
     "deno.unstable": true,
-    "deno.import_intellisense_origins": {
-        "http://deno.land": false,
-        "https://deno.land": true
+    "deno.suggest.imports.hosts": {
+        "https://deno.land": false
     }
 }

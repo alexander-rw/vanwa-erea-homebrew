@@ -1,9 +1,10 @@
-import { walk } from "https://deno.land/std@0.75.0/fs/walk.ts";
-import { parse as parseArgs } from "https://deno.land/std/flags/mod.ts";
+import { walk } from "https://deno.land/std@0.102.0/fs/walk.ts";
+import { parse as parseArgs } from "https://deno.land/std@0.102.0/flags/mod.ts";
+const { args } = Deno;
 
 import { meta } from "./meta.ts";
 
-const { fileName } = parseArgs(Deno.args);
+const { fileName } = parseArgs(args);
 
 const monsters: unknown[] = [];
 

@@ -1,7 +1,7 @@
 SENT TO LUCIEN:
 
-- Korred parts
-- golem parts
+- Korred parts (for giant metal dragon)
+- golem parts (for giant metal dragon)
 
 - Bulette parts
 - Chuul parts
