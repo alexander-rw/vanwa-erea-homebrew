@@ -12,3 +12,6 @@ SENT TO LUCIEN:
 - undead dragon parts
 - spawn of kyuss
 - Lonely
+- retriever parts
+- heart piercer manticore
+- catoblepas
