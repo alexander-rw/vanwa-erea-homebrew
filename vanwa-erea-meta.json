@@ -14,7 +14,7 @@
       }
     ],
     "dateAdded": 1537874753,
-    "dateLastModified": 1627210058
+    "dateLastModified": 1627215685
   },
   "monster": [
     {
@@ -2317,6 +2317,246 @@
         "Magic Resistance"
       ],
       "legendaryActions": 3
+    },
+    {
+      "name": "Drow House Captain",
+      "source": "VANWA",
+      "page": 184,
+      "size": "M",
+      "type": {
+        "type": "humanoid",
+        "tags": [
+          "elf"
+        ]
+      },
+      "alignment": [
+        "N",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 18,
+          "from": [
+            "Half Plate Armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "24d8 + 96",
+        "average": 204
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 20,
+      "dex": 14,
+      "con": 18,
+      "int": 12,
+      "wis": 14,
+      "cha": 18,
+      "save": {
+        "con": "+9",
+        "wis": "+7",
+        "cha": "+9"
+      },
+      "skill": {
+        "perception": "+7",
+        "stealth": "+7",
+        "arcana": "+6"
+      },
+      "senses": [
+        "darkvision 120 ft."
+      ],
+      "passive": 17,
+      "languages": [
+        "Elvish",
+        "Undercommon"
+      ],
+      "cr": "16",
+      "spellcasting": [
+        {
+          "name": "Innate Spellcasting",
+          "headerEntries": [
+            "The drow's innate spellcasting ability is Charisma (spell save {@dc 17}). He can innately cast the following spells, requiring no material components:"
+          ],
+          "will": [
+            "{@spell dancing lights}"
+          ],
+          "daily": {
+            "1e": [
+              "{@spell darkness}",
+              "{@spell faerie fire}",
+              "{@spell levitate} (self only)"
+            ]
+          },
+          "ability": "cha",
+          "type": "spellcasting"
+        },
+        {
+          "name": "Paladin Spellcasting",
+          "headerEntries": [
+            "The drow's paladin spellcasting ability is Charisma (spell save {@dc 17}, +9 to hit with spell attacks). He can innately cast the following spells:"
+          ],
+          "spells": {
+            "1": {
+              "spells": [
+                "{@spell command}",
+                "{@spell shield of faith}"
+              ],
+              "slots": 4
+            },
+            "2": {
+              "spells": [
+                "{@spell branding smite}"
+              ],
+              "slots": 3
+            },
+            "3": {
+              "spells": [
+                "{@spell blinding smite}",
+                "{@spell dispel magic}",
+                "{@spell spirit guardians}"
+              ],
+              "slots": 2
+            }
+          },
+          "ability": "cha",
+          "type": "spellcasting"
+        }
+      ],
+      "trait": [
+        {
+          "name": "Fey Ancestry",
+          "entries": [
+            "The drow has advantage on saving throws against being {@condition charmed}, and magic can't put the drow to sleep."
+          ]
+        },
+        {
+          "name": "Aura of Loyalty",
+          "entries": [
+            "Creatures within 10ft of the drow gain a +4 bonus to saving throws."
+          ]
+        },
+        {
+          "name": "Legendary Resistance (3/day)",
+          "entries": [
+            "If the drow fails a saving throw, it can choose to succeed instead."
+          ]
+        },
+        {
+          "name": "Smite",
+          "entries": [
+            "When the drow hits with a melee weapon attack, he can choose to expend a spell slot. The weapon attack deals an extra 1d8, plus 1d8 for each level above 1st."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The drow makes three attacks: two with his scimitar and one with his whip"
+          ]
+        },
+        {
+          "name": "Scimitar",
+          "entries": [
+            "{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h} 8 ({@damage 1d6 + 7}) slashing damage plus 14 ({@damage 4d6}) poison damage. The target must make a {@dc 18} dexterity saving throw, or drop the object it is holding, if any."
+          ]
+        },
+        {
+          "name": "Whip",
+          "entries": [
+            "{@atk mw} {@hit 10} to hit, reach 10 ft., one target. {@h}12 ({@damage 2d4 + 7}) slashing damage. The target must make a {@dc 18} strength saving throw or fall {@condition prone}"
+          ]
+        },
+        {
+          "name": "Hand Crossbow",
+          "entries": [
+            "{@atk rw} {@hit 8} to hit, range 30/120 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage, and the target must succeed on a {@dc 16} Constitution saving throw or be {@condition poisoned} for 1 hour. If the saving throw fails by 5 or more, the target is also {@condition unconscious} while {@condition poisoned} in this way. The target regains consciousness if it takes damage or if another creature takes an action to shake it."
+          ]
+        }
+      ],
+      "reaction": [
+        {
+          "name": "Attack",
+          "entries": [
+            "The drow makes a single melee attack with advantage. If the attack hits, the target's speed is reduced to 0 until the end of their next turn."
+          ]
+        }
+      ],
+      "environment": [
+        "underdark"
+      ],
+      "soundClip": {
+        "type": "external",
+        "url": "https://noads.5e.tools/audio/bestiary/drow-house-captain.mp3?v=1.132.3"
+      },
+      "traitTags": [
+        "Fey Ancestry",
+        "Legendary Resistances"
+      ],
+      "senseTags": [
+        "SD"
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "languageTags": [
+        "E",
+        "U"
+      ],
+      "damageTags": [
+        "S",
+        "I",
+        "P"
+      ],
+      "spellcastingTags": [
+        "I",
+        "CP"
+      ],
+      "miscTags": [
+        "MW",
+        "RCH",
+        "RW",
+        "RNG"
+      ],
+      "hasFluff": true,
+      "tokenUrl": "https://noads.5e.tools/img/MTF/Drow House Captain.png?v=1.132.3",
+      "fluff": {
+        "name": "Drow House Captain",
+        "source": "MTF",
+        "entries": [
+          {
+            "type": "entries",
+            "entries": [
+              {
+                "type": "entries",
+                "entries": [
+                  {
+                    "type": "quote",
+                    "entries": [
+                      "Many creatures enjoy torture, but the dark elves have made it into an exquisite art."
+                    ],
+                    "by": "Mordenkainen"
+                  },
+                  {
+                    "type": "entries",
+                    "name": "Drow House Captain",
+                    "entries": [
+                      "Each drow noble house entrusts the leadership of its military forces to a house captain, a position normally held by the matriarch's first or second son. The house captain commands the drow and slaves making up the family's army and has made extensive study of strategy and tactics to become an effective leader in battle."
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "conditionInflict": [
+        "prone",
+        "unconscious",
+        "poisoned"
+      ]
     }
   ]
 }

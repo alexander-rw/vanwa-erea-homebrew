@@ -4,7 +4,7 @@ const { args } = Deno;
 
 import { meta } from "./meta.ts";
 
-const { fileName } = parseArgs(args);
+const { fileName, debug } = parseArgs(args);
 
 const monsters: unknown[] = [];
 
@@ -19,7 +19,11 @@ for await (const { path } of walk("./creatures", { match: [/\.json/] })) {
             monsters.push(data);
         }
     } catch(e) {
-        console.log(`Path: ${path}`, e);
+        if (debug) {
+            console.log(`Path: ${path}`, e);
+        } else {
+            console.log(`Skipping path: ${path}`);
+        }
     }
 }
 
