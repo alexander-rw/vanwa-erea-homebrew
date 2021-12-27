@@ -14,7 +14,7 @@
       }
     ],
     "dateAdded": 1537874753,
-    "dateLastModified": 1627216044
+    "dateLastModified": 1640615206
   },
   "monster": [
     {
@@ -1628,6 +1628,288 @@
         ]
       },
       "shortName": true
+    },
+    {
+      "name": "Malygos Mandros (V2)",
+      "isNpc": true,
+      "isNamedCreature": true,
+      "source": "VanwaErea2",
+      "page": 204,
+      "size": "M",
+      "type": {
+        "type": "humanoid",
+        "tags": [
+          "human"
+        ]
+      },
+      "alignment": [
+        "L",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 22,
+          "from": [
+            "Unarmored Defense"
+          ]
+        }
+      ],
+      "hp": {
+        "average": 137,
+        "formula": "25d8 + 25"
+      },
+      "speed": {
+        "walk": 60,
+        "fly": 40
+      },
+      "str": 16,
+      "dex": 24,
+      "con": 18,
+      "int": 14,
+      "wis": 21,
+      "cha": 14,
+      "save": {
+        "str": "+8",
+        "dex": "+12",
+        "con": "+9",
+        "int": "+7",
+        "wis": "+10",
+        "cha": "+7"
+      },
+      "skill": {
+        "athletics": "+13"
+      },
+      "senses": [
+        "darkvision 120 ft."
+      ],
+      "passive": 15,
+      "immune": [
+        "acid",
+        "fire",
+        "poison"
+      ],
+      "conditionImmune": [
+        "charmed",
+        "frightened",
+        "poisoned",
+        "stunned"
+      ],
+      "languages": [
+        "all spoken languages"
+      ],
+      "cr": "16",
+      "spellcasting": [
+        {
+          "name": "Spellcasting",
+          "headerEntries": [
+            "Maylgos is a 5th-level spellcaster. His spellcasting ability is Wisdom (spell save {@dc 19}, {@hit 10} to hit with spell attacks) He has the following cleric spells prepared:"
+          ],
+          "spells": {
+            "0": {
+              "spells": [
+                "{@spell guidance}",
+                "{@spell light}",
+                "{@spell sacred flame}",
+                "{@spell spare the dying}"
+              ]
+            },
+            "1": {
+              "slots": 4,
+              "spells": [
+                "{@spell detect evil and good}",
+                "{@spell healing word}",
+                "{@spell sanctuary}",
+                "{@spell shield of faith}"
+              ]
+            },
+            "2": {
+              "slots": 3,
+              "spells": [
+                "{@spell calm emotions}",
+                "{@spell prayer of healing}",
+                "{@spell silence}"
+              ]
+            },
+            "3": {
+              "slots": 2,
+              "spells": [
+                "{@spell protection from energy}",
+                "{@spell remove curse}",
+                "{@spell sending}"
+              ]
+            }
+          },
+          "ability": "wis",
+          "type": "spellcasting"
+        }
+      ],
+      "trait": [
+        {
+          "name": "Evasion",
+          "entries": [
+            "If Maylgos is subjected to an effect that allows him to make a Dexterity saving throw to take only half damage, he instead takes no damage if he succeeds on the saving throw, and only half damage if he fails. He can't use this trait if he's {@condition incapacitated}."
+          ]
+        },
+        {
+          "name": "Devil's Sight",
+          "entries": [
+            "Magical darkness doesn't impede Malygos' darkvision."
+          ]
+        },
+        {
+          "name": "Magic Resistance",
+          "entries": [
+            "Malygos has advantage on saving throws against spells and other magical effects."
+          ]
+        },
+        {
+          "name": "Magic Weapons",
+          "entries": [
+            "Malygos's attacks are magical."
+          ]
+        },
+        {
+          "name": "Shadow Stealth",
+          "entries": [
+            "While in dim light or darkness, Malygos can take the Hide action as a bonus action."
+          ]
+        },
+        {
+          "name": "Lair Actions",
+          "entries": [
+            "Grasping Muck. Tendrils of roiling muck extend from the dragon's lair to grasp up to three creatures of the dragon's choice that it can see within the lair. A targeted creature must succeed on a DC 15 Strength saving throw or be restrained until initiative count 20 on the next round.",
+            "Noxious Gas. A bubble of acidic gas erupts in a 20-foot-radius sphere centered on a point the dragon can see within its lair. Each creature must make a DC15 constitution saving throw, taking 4d8 acid damage on a save, or half as much on a success.",
+            "Maddening Darkness. A sphere of magical darkness erupts in a 20-foot-radius sphere centered on a point the dragon can see within its lair. Each creature must make a DC15 wisdom saving throw. A creature that fails takes 3d12 psychic damage, has its speed halved, and can make either an action or bonus action on its next turn. A creature that saves takes half as much damage and is not subject to the other effects."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "Malygos attacks four times using his unarmed strike, darts, or both."
+          ]
+        },
+        {
+          "name": "Unarmed Strike",
+          "entries": [
+            "{@atk mw} {@hit 12} to hit, reach 5 ft., one target. {@h}12 ({@dice 1d10 + 7}) bludgeoning, magic damage."
+          ]
+        },
+        {
+          "name": "Dart",
+          "entries": [
+            "{@atk rw} {@hit 12} to hit, range 20/60 ft., one target. {@h}9 ({@damage 1d4 + 7}) piercing damage."
+          ]
+        },
+        {
+          "name": "Quivering Palm {@recharge}",
+          "entries": [
+            "{@atk mw} {@hit 12} to hit, reach 5 ft., one creature. {@h}The target must make a {@dc 18} Constitution saving throw. The target takes 88 ({@damage 16d10}) necrotic damage, or half as much on a successful save."
+          ]
+        },
+        {
+          "name": "Wholeness of Body (Recharges after a Long Rest)",
+          "entries": [
+            "Malygos regains 60 hit points."
+          ]
+        }
+      ],
+      "bonus": [
+        {
+          "name": "Path of Darkness",
+          "entries": [
+            "Malygos creates a sphere of magical darkness in a 20ft radius around him."
+          ]
+        }
+      ],
+      "reaction": [
+        {
+          "name": "Deflect Missile",
+          "entries": [
+            "In response to being hit by a ranged weapon attack, Malygos deflects the missile. The damage he takes from the attack is reduced by {@dice 1d10 + 27}. If the damage is reduced to 0, Malygos catches the missile if it's small enough to hold in one hand and he has a hand free."
+          ]
+        },
+        {
+          "name": "Slow Fall",
+          "entries": [
+            "Malygos reduces the bludgeoning damage he takes from a fall by 100."
+          ]
+        }
+      ],
+      "legendary": [
+        {
+          "name": "Quick Step",
+          "entries": [
+            "Malygos moves up to his speed without provoking opportunity attacks."
+          ]
+        },
+        {
+          "name": "Unarmed Strike",
+          "entries": [
+            "Malygos makes one unarmed strike or dart attack."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "languageTags": [
+        "XX"
+      ],
+      "damageTags": [
+        "N",
+        "P"
+      ],
+      "spellcastingTags": [
+        "CC"
+      ],
+      "miscTags": [
+        "MW",
+        "RW",
+        "THW"
+      ],
+      "conditionInflict": [
+        "prone",
+        "stunned"
+      ],
+      "conditionInflictSpell": [
+        "deafened"
+      ],
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "tokenUrl": "https://5e.tools/img/WDH/Malygos.png",
+      "fluff": {
+        "name": "Malygos",
+        "source": "WDH",
+        "entries": [
+          {
+            "type": "entries",
+            "entries": [
+              {
+                "type": "entries",
+                "entries": [
+                  {
+                    "type": "entries",
+                    "entries": [
+                      "MALYGOS"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "internal",
+              "path": "bestiary/WDH/Malygos.jpg"
+            }
+          }
+        ]
+      }
     },
     {
       "name": "Vanan Mandros (Enchanter - Domination)",

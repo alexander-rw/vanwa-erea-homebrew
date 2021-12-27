@@ -15,3 +15,4 @@ SENT TO LUCIEN:
 - retriever parts
 - heart piercer manticore
 - catoblepas
+- sphinx
