@@ -6,7 +6,7 @@ import { meta } from "./meta.ts";
 
 const { fileName, debug, dryRun } = parseArgs(args);
 
-console.log(fileName, debug, dryRun);
+console.log(fileName, debug, dryRun, args);
 
 const monsters: unknown[] = [];
 
