@@ -7,7 +7,7 @@ import { meta } from "./meta.ts";
 const { fileName, debug, dryRun } = parseArgs(args);
 
 console.log(fileName, debug, dryRun);
-process.exit();
+Deno.exit(1);
 
 const monsters: unknown[] = [];
 
