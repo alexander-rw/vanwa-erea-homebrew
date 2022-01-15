@@ -4,7 +4,10 @@ const { args } = Deno;
 
 import { meta } from "./meta.ts";
 
-const { fileName, debug } = parseArgs(args);
+const { fileName, debug, dryRun } = parseArgs(args);
+
+console.log(fileName, debug, dryRun);
+process.exit();
 
 const monsters: unknown[] = [];
 
