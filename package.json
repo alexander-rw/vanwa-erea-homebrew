@@ -1,0 +1,26 @@
+{
+  "name": "vanwa-erea-homebrew",
+  "version": "1.0.0",
+  "description": "Vanwa Erea Homebrew Generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "tsc",
+    "build": "ts-node index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexander-rw/vanwa-erea-homebrew.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexander-rw/vanwa-erea-homebrew/issues"
+  },
+  "homepage": "https://github.com/alexander-rw/vanwa-erea-homebrew#readme",
+  "dependencies": {
+    "@types/node": "^17.0.8",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.4"
+  }
+}

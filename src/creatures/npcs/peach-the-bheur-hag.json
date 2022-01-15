@@ -2,7 +2,7 @@
 	"name": "Peach the Bheur Hag",
 	"group": "Hags",
 	"isNpc": true,
-	"source": "ToB",
+	"source": "VANWA",
 	"page": 228,
 	"size": "M",
 	"type": {

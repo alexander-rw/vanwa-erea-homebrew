@@ -3,7 +3,7 @@
 	"name": "Malygos Mandros (V2)",
 	"isNpc": true,
 	"isNamedCreature": true,
-	"source": "VanwaErea2",
+	"source": "VANWA",
 	"page": 204,
 	"size": "M",
 	"type": {
