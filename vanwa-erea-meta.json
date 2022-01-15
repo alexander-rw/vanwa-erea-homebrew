@@ -14,7 +14,7 @@
       }
     ],
     "dateAdded": 1537874753,
-    "dateLastModified": 1642254688
+    "dateLastModified": 1642254905
   },
   "monster": [
     {
@@ -737,7 +737,7 @@
         {
           "name": "Claws",
           "entries": [
-            "Hive makes one attack with its tentacles."
+            "Hive makes one attack with its claws."
           ]
         },
         {

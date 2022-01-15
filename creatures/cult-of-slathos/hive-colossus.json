@@ -5,11 +5,11 @@
 	"otherSources": [],
 	"size": "H",
 	"type": {
-				"type": "abberation",
-				"tags": [
-					"Illitharid Hybrid"
-				]
-			},
+		"type": "abberation",
+		"tags": [
+			"Illitharid Hybrid"
+		]
+	},
 	"alignment": [
 		"L",
 		"E"
@@ -62,30 +62,30 @@
 	"cr": "17",
 	"trait": [
 		{
-		"name": "Legendary Resistance (2/Day)",
-		"entries": [
-			"If Hive fails a saving throw, it can choose to succeed instead."
-		]
+			"name": "Legendary Resistance (2/Day)",
+			"entries": [
+				"If Hive fails a saving throw, it can choose to succeed instead."
+			]
 		},
 		{
-		"name": "Confusing Gaze",
-		"entries": [
-			"When a creature starts its turn within 30 feet of the umber hulk and is able to see Hive's eyes, it can magically force the creature to make a {@dc 15} Charisma saving throw, unless the umber hulk is {@condition incapacitated}.",
-			"On a failed saving throw, the creature can't take reactions until the start of its next turn and rolls a {@dice d8} to determine what it does during that turn. On a 1 to 4, the creature does nothing. On a 5 or 6, the creature takes no action but uses all its movement to move in a random direction. On a 7 or 8, the creature makes one melee attack against a random creature, or it does nothing if no creature is within reach.",
-			"Unless surprised, a creature can avert its eyes to avoid the saving throw at the start of its turn. If the creature does so, it can't see the umber hulk until the start of its next turn, when it can avert its eyes again. If the creature looks at the umber hulk in the meantime, it must immediately make the save."
-		]
+			"name": "Confusing Gaze",
+			"entries": [
+				"When a creature starts its turn within 30 feet of the umber hulk and is able to see Hive's eyes, it can magically force the creature to make a {@dc 15} Charisma saving throw, unless the umber hulk is {@condition incapacitated}.",
+				"On a failed saving throw, the creature can't take reactions until the start of its next turn and rolls a {@dice d8} to determine what it does during that turn. On a 1 to 4, the creature does nothing. On a 5 or 6, the creature takes no action but uses all its movement to move in a random direction. On a 7 or 8, the creature makes one melee attack against a random creature, or it does nothing if no creature is within reach.",
+				"Unless surprised, a creature can avert its eyes to avoid the saving throw at the start of its turn. If the creature does so, it can't see the umber hulk until the start of its next turn, when it can avert its eyes again. If the creature looks at the umber hulk in the meantime, it must immediately make the save."
+			]
 		},
 		{
-		"name": "Tunneler",
-		"entries": [
-			"Hive can burrow through solid rock at half its burrowing speed and leaves a 5 foot-wide, 8-foot-high tunnel in its wake."
-		]
+			"name": "Tunneler",
+			"entries": [
+				"Hive can burrow through solid rock at half its burrowing speed and leaves a 5 foot-wide, 8-foot-high tunnel in its wake."
+			]
 		},
 		{
-		"name": "Magic Resistance",
-		"entries": [
-			"Hive has advantage on saving throws against spells and other magical effects."
-		]
+			"name": "Magic Resistance",
+			"entries": [
+				"Hive has advantage on saving throws against spells and other magical effects."
+			]
 		}
 	],
 	"action": [
@@ -128,28 +128,28 @@
 	],
 	"legendary": [
 		{
-		"name": "Claws",
-		"entries": [
-			"Hive makes one attack with its tentacles."
-		]
+			"name": "Claws",
+			"entries": [
+				"Hive makes one attack with its claws."
+			]
 		},
 		{
-		"name": "Tentacles",
-		"entries": [
-			"Hive makes one attack with its tentacles."
-		]
+			"name": "Tentacles",
+			"entries": [
+				"Hive makes one attack with its tentacles."
+			]
 		},
 		{
-		"name": "Extract Brain (Costs 2 Actions)",
-		"entries": [
-			"Hive uses Extract Brain."
-		]
+			"name": "Extract Brain (Costs 2 Actions)",
+			"entries": [
+				"Hive uses Extract Brain."
+			]
 		},
 		{
-		"name": "Mind Blast (Costs 3 Actions)",
-		"entries": [
-			"Hive recharges its Mind Blast and uses it."
-		]
+			"name": "Mind Blast (Costs 3 Actions)",
+			"entries": [
+				"Hive recharges its Mind Blast and uses it."
+			]
 		}
 	],
 	"environment": [
