@@ -4,11 +4,12 @@ const { args } = Deno;
 
 import { meta } from "./meta.ts";
 
-const { fileName, debug, dryRun } = parseArgs(args);
-
-console.log(fileName, debug, dryRun, args);
+const { fileName, debug } = parseArgs(args);
 
 const monsters: unknown[] = [];
+
+const parsed: string[] = [];
+const skipped: string[] = [];
 
 console.log("");
 
@@ -17,10 +18,11 @@ for await (const { path } of walk("./creatures", { match: [/\.json/] })) {
 
     try {
         const data = JSON.parse(d);
-    
         if (data && Object.keys(data).length > 0) {
-            console.log(`Parsing ${path}`);
+            parsed.push(`PARSING::: ${path}`);
             monsters.push(data);
+        } else {
+            skipped.push(`SKIPPED::: ${path}`);
         }
     } catch(e) {
         if (debug) {
@@ -30,6 +32,8 @@ for await (const { path } of walk("./creatures", { match: [/\.json/] })) {
         }
     }
 }
+
+[...parsed, "", ...skipped].forEach(p => console.log(p));
 
 console.log("");
 console.log(`${new Date().toISOString()}: Writing file '${fileName}'`);
