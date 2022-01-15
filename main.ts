@@ -10,6 +10,8 @@ console.log(fileName, debug, dryRun);
 
 const monsters: unknown[] = [];
 
+console.log("");
+
 for await (const { path } of walk("./creatures", { match: [/\.json/] })) {
     const d = await Deno.readTextFile(path);
 
@@ -29,6 +31,8 @@ for await (const { path } of walk("./creatures", { match: [/\.json/] })) {
     }
 }
 
+console.log("");
 console.log(`${new Date().toISOString()}: Writing file '${fileName}'`);
+console.log("");
 
 await Deno.writeTextFile(fileName, JSON.stringify({ ...meta, monster: monsters }, null, 2));
