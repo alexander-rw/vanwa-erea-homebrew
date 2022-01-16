@@ -14,7 +14,7 @@
       }
     ],
     "dateAdded": 1537874753,
-    "dateLastModified": 1642341174
+    "dateLastModified": 1642341426
   },
   "monster": [
     {
@@ -1240,7 +1240,7 @@
     {
       "name": "Arkhan the Cruel",
       "isNpc": true,
-      "source": "ToB",
+      "source": "VANWA",
       "page": 111,
       "size": "M",
       "type": {

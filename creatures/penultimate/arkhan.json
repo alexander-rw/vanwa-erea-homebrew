@@ -1,7 +1,7 @@
 {
 	"name": "Arkhan the Cruel",
 	"isNpc": true,
-	"source": "ToB",
+	"source": "VANWA",
 	"page": 111,
 	"size": "M",
 	"type": {
