@@ -101,6 +101,12 @@
 			"entries": [
 				"Mordakhesh's attacks are magical."
 			]
+		},
+    {
+			"name": "Legendary Resistance (1/Day)",
+			"entries": [
+				"If Mordakesh fails a saving throw, it can choose to succeed instead."
+			]
 		}
 	],
 	"action": [
