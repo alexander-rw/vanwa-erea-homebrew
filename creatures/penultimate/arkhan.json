@@ -1,1 +1,189 @@
-{}
+{
+	"name": "Arkhan the Cruel",
+	"isNpc": true,
+	"source": "ToB",
+	"page": 111,
+	"size": "M",
+	"type": {
+		"type": "humanoid",
+		"tags": [
+			"dragonborn"
+		]
+	},
+	"alignment": [
+		"L",
+		"E"
+	],
+	"ac": [
+		{
+			"ac": 23,
+			"from": [
+				"natural armor"
+			]
+		}
+	],
+	"hp": {
+		"average": 286,
+		"formula": "27d8 + 135"
+	},
+	"speed": {
+		"walk": 40
+	},
+	"str": 23,
+	"dex": 16,
+	"con": 20,
+	"int": 14,
+	"wis": 16,
+	"cha": 22,
+	"save": {
+    "dex": "+9",
+		"wis": "+9",
+		"cha": "+12"
+	},
+	"skill": {
+		"athletics": "+11",
+		"deception": "+10",
+		"intimidation": "+10"
+	},
+	"senses": [
+		"darkvision 60 ft. (can see invisible creatures out to the same range)"
+	],
+	"passive": 10,
+	"conditionImmune": [
+		"frightened"
+	],
+	"immune": [
+		"fire",
+    "lightning",
+    "cold",
+    "acid",
+		"poison",
+    {
+			"immune": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"note": "from nonmagical attacks",
+			"cond": true
+		}
+	],
+	"languages": [
+		"Common",
+		"Draconic"
+	],
+	"cr": "20",
+	"spellcasting": [
+		{
+			"name": "Innate Spellcasting",
+			"headerEntries": [
+				"Arkhan's spellcasting ability is Charisma (spell save {@dc 18}). He can cast the following spells, requiring no material components:"
+			],
+			"daily": {
+				"3e": [
+					"{@spell staggering smite}"
+				]
+			},
+			"ability": "cha",
+			"type": "spellcasting"
+		}
+	],
+	"trait": [
+		{
+			"name": "Aura of Hate",
+			"entries": [
+				"While Arkhan isn't {@condition incapacitated}, he and all fiends and undead within 30 feet of him deal 4 extra damage whenever they hit with a melee weapon attack (already factored into Arkhan's attacks). This extra damage is of the same type as the weapon's damage type."
+			]
+		},
+    {
+			"name": "Legendary Resistance (3/Day)",
+			"entries": [
+				"If Ashardalon fails a saving throw, it can choose to succeed instead."
+			]
+		},
+		{
+			"name": "Lair Actions (initiative count 20, losing ties)",
+			"entries": [
+				""
+			]
+		},
+    {
+      "name": "Hand of Tiamat",
+      "entries": [
+        "One creature must make a {@dc 18} saving throw with a bonus equal to their proficiency bonus. The target rolls 2d8; on a failed save, they are affected by two of the rays as per the {@spell prismatic spray}. On a successful save, the target may choose which ray to be affected by."
+      ]
+    }
+	],
+	"action": [
+		{
+			"name": "Multiattack",
+			"entries": [
+				"Arkhan makes four weapon attacks."
+			]
+		},
+		{
+			"name": "Fane-Eater (Battleaxe)",
+			"entries": [
+				"{@atk mw} {@hit 14} to hit, reach 5 ft., one target. {@h}19 ({@damage 1d12 + 12}) slashing damage, plus 19 ({@damage 3d8 + 6}) fire damage."
+			]
+		}
+	],
+	"senseTags": [
+		"D"
+	],
+	"actionTags": [
+		"Multiattack"
+	],
+	"languageTags": [
+		"C",
+		"DR"
+	],
+	"damageTags": [
+		"C",
+		"N",
+		"P",
+		"S"
+	],
+	"spellcastingTags": [
+		"I"
+	],
+	"miscTags": [
+		"MW",
+		"RW",
+		"THW"
+	],
+	"conditionInflictSpell": [
+		"charmed"
+	],
+	"hasFluff": true,
+	"hasFluffImages": true,
+	"tokenUrl": "https://5e.tools/img/BGDIA/Arkhan the Cruel.png",
+	"fluff": {
+		"name": "Arkhan the Cruel",
+		"source": "BGDIA",
+		"entries": [
+			{
+				"type": "entries",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							"Arkhan the Cruel is an evil dragonborn champion of Tiamat. Arkhan believes he can use the Hand of Vecna to unlock the means of freeing Tiamat from her prison in the Nine Hells, but only if the hand doesn't kill him first. The hand is slowly corrupting Arkhan's flesh and decomposing his body on one side.",
+							"In battle, Arkhan uses branding smite to channel the radiant power of Tiamat into his weapon attacks. If a fight turns against him, he uses the teleport power of the Hand of Vecna to return to his tower with as many allies as possible. Should one or more of his comrades fall in battle, Arkhan uses {@spell revivify} and {@spell raise dead} spells to bring them back to life as soon as possible.",
+							"If Arkhan finds himself overwhelmed with opposition, he orders the abishai to attack. Arkhan can also use a bonus action to call forth Asojano, a chimera lairing in the depths of the colossal dragon skull."
+						]
+					}
+				]
+			}
+		],
+		"images": [
+			{
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "bestiary/BGDIA/Arkhan the Cruel.jpg"
+				}
+			}
+		]
+	}
+}
