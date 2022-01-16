@@ -14,7 +14,7 @@
       }
     ],
     "dateAdded": 1537874753,
-    "dateLastModified": 1642341426
+    "dateLastModified": 1642347948
   },
   "monster": [
     {
@@ -784,7 +784,7 @@
       "group": [
         "Chromatic Dragon"
       ],
-      "source": "ToB",
+      "source": "VANWA",
       "page": 97,
       "size": "G",
       "type": "dragon",
